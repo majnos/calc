@@ -29,6 +29,14 @@ class TestAssignment(unittest.TestCase):
         res = self.calc.add("1,2\n3")
         self.assertEqual(res, 6)
 
+    def test_custom_separator_correct(self):
+        res = self.calc.add("[:]\n1:2:3")
+        self.assertEqual(res, 6)
+
+    def test_custom_separator_semicolon_correct(self):
+        res = self.calc.add("[;]\n1;2;3")
+        self.assertEqual(res, 6)
+
     def test_three_numbers_two_separators_incorrect(self):
         with self.assertRaises(ValueError):
             self.calc.add("1,2\n 3")
@@ -40,7 +48,6 @@ class TestAssignment(unittest.TestCase):
     def test_randomstring_raises(self):
         with self.assertRaises(ValueError):
             self.calc.add("ran,do/mstring")
-
 
 if __name__ == '__main__':
     unittest.main()
