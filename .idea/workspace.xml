@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3dd79525-7b2e-4e0d-8697-5d0903ba8a89" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/calc.py" afterPath="$PROJECT_DIR$/app/calc.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_calc.py" afterPath="$PROJECT_DIR$/test/test_calc.py" />
     </list>
@@ -19,20 +18,8 @@
       <file leaf-file-name="test_calc.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/test_calc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="case.py" pinned="false" current-in-tab="false">
-        <entry file="file://C:/Python34/Lib/unittest/case.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
-              <caret line="593" column="0" lean-forward="false" selection-start-line="593" selection-start-column="0" selection-end-line="593" selection-end-column="0" />
+            <state relative-caret-position="-221">
+              <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -41,8 +28,8 @@
       <file leaf-file-name="calc.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/calc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+            <state relative-caret-position="306">
+              <caret line="18" column="41" lean-forward="false" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -71,8 +58,8 @@
         <option value="$PROJECT_DIR$/tests/test_calc.py" />
         <option value="$PROJECT_DIR$/tests/test_class.py" />
         <option value="$PROJECT_DIR$/test/test_class.py" />
-        <option value="$PROJECT_DIR$/app/calc.py" />
         <option value="$PROJECT_DIR$/test/test_calc.py" />
+        <option value="$PROJECT_DIR$/app/calc.py" />
       </list>
     </option>
   </component>
@@ -186,6 +173,21 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method />
     </configuration>
+    <configuration default="false" name="Unittests for test.test_calc.TestAssignment.test_negatives_not_allowed_raises" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="calc" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test.test_calc.TestAssignment.test_negatives_not_allowed_raises&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method />
+    </configuration>
     <configuration default="false" name="Unittests for test.test_calc.TestAssignment.test_custom_separator_correct" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -201,34 +203,22 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittests for test.test_calc.TestAssignment.test_empty_returns_0" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="calc" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="calc" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test.test_calc.TestAssignment.test_empty_returns_0&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests for test" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="calc" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/calc.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration">
@@ -301,17 +291,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in test_calc.py" />
       <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for test.test_calc.TestAssignment" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for test.test_calc.TestAssignment.test_custom_separator_correct" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for test.test_calc.TestAssignment.test_empty_returns_0" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for test" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for test.test_calc.TestAssignment.test_negatives_not_allowed_raises" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for test.test_calc.TestAssignment.test_custom_separator_correct" />
+      <item index="4" class="java.lang.String" itemvalue="Python.calc" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in test_calc.py" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for test.test_calc.TestAssignment.test_custom_separator_correct" />
+        <item index="1" class="java.lang.String" itemvalue="Python.calc" />
         <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for test.test_calc.TestAssignment" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for test" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for test.test_calc.TestAssignment.test_empty_returns_0" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for test.test_calc.TestAssignment.test_negatives_not_allowed_raises" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for test.test_calc.TestAssignment.test_custom_separator_correct" />
       </list>
     </recent_temporary>
   </component>
@@ -329,34 +319,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_test_test_calc_TestAssignment - 2017.08.14 at 23h 14m 12s.xml">
+    <history-entry file="Unittests_for_test_test_calc_TestAssignment - 2017.08.14 at 23h 59m 17s.xml">
       <configuration name="Unittests for test.test_calc.TestAssignment" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_test_calc_TestAssignment - 2017.08.14 at 23h 15m 51s.xml">
-      <configuration name="Unittests for test.test_calc.TestAssignment" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_test_calc_TestAssignment - 2017.08.14 at 23h 18m 49s.xml">
-      <configuration name="Unittests for test.test_calc.TestAssignment" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_test_calc_TestAssignment_test_custom_separator_correct - 2017.08.14 at 23h 14m 31s.xml">
+    <history-entry file="Unittests_for_test_test_calc_TestAssignment_test_custom_separator_correct - 2017.08.14 at 23h 55m 39s.xml">
       <configuration name="Unittests for test.test_calc.TestAssignment.test_custom_separator_correct" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_test_calc_TestAssignment_test_custom_separator_correct - 2017.08.14 at 23h 20m 08s.xml">
-      <configuration name="Unittests for test.test_calc.TestAssignment.test_custom_separator_correct" configurationId="tests" />
+    <history-entry file="Unittests_for_test_test_calc_TestAssignment_test_negatives_not_allowed_raises - 2017.08.14 at 23h 55m 27s.xml">
+      <configuration name="Unittests for test.test_calc.TestAssignment.test_negatives_not_allowed_raises" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_test_calc_TestAssignment_test_custom_separator_correct - 2017.08.14 at 23h 21m 57s.xml">
-      <configuration name="Unittests for test.test_calc.TestAssignment.test_custom_separator_correct" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_calc_py - 2017.08.14 at 23h 14m 18s.xml">
+    <history-entry file="Unittests_in_test_calc_py - 2017.08.15 at 00h 05m 16s.xml">
       <configuration name="Unittests in test_calc.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_calc_py - 2017.08.14 at 23h 14m 22s.xml">
+    <history-entry file="Unittests_in_test_calc_py - 2017.08.15 at 00h 05m 23s.xml">
       <configuration name="Unittests in test_calc.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_calc_py - 2017.08.14 at 23h 14m 44s.xml">
+    <history-entry file="Unittests_in_test_calc_py - 2017.08.15 at 00h 05m 46s.xml">
       <configuration name="Unittests in test_calc.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_calc_py - 2017.08.14 at 23h 24m 00s.xml">
+    <history-entry file="Unittests_in_test_calc_py - 2017.08.15 at 00h 06m 57s.xml">
+      <configuration name="Unittests in test_calc.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_calc_py - 2017.08.15 at 00h 07m 56s.xml">
+      <configuration name="Unittests in test_calc.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_calc_py - 2017.08.15 at 00h 09m 04s.xml">
+      <configuration name="Unittests in test_calc.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_calc_py - 2017.08.15 at 00h 10m 24s.xml">
       <configuration name="Unittests in test_calc.py" configurationId="tests" />
     </history-entry>
   </component>
@@ -367,7 +357,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.54756874" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4154334" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -389,10 +379,17 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test/test_calc.py</url>
+          <line>53</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="16" />
+      <option name="time" value="21" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -421,29 +418,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/Python34/Lib/re.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="209" column="0" lean-forward="false" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://C:/Python34/Lib/unittest/case.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="593" column="0" lean-forward="false" selection-start-line="593" selection-start-column="0" selection-end-line="593" selection-end-column="0" />
+        <state relative-caret-position="183">
+          <caret line="577" column="0" lean-forward="false" selection-start-line="577" selection-start-column="0" selection-end-line="577" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/calc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+        <state relative-caret-position="306">
+          <caret line="18" column="41" lean-forward="false" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test_calc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-221">
+          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>

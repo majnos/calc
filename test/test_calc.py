@@ -22,8 +22,8 @@ class TestAssignment(unittest.TestCase):
         self.assertEqual(res, 3)
 
     def test_n_numbers_correct(self):
-        res = self.calc.add("-10,1,2,5,9,1000,10000")
-        self.assertEqual(res, 11007)
+        res = self.calc.add("1,2,5,9,1000,10000")
+        self.assertEqual(res, 11017)
 
     def test_two_separators_correct(self):
         res = self.calc.add("1,2\n3")
@@ -48,6 +48,11 @@ class TestAssignment(unittest.TestCase):
     def test_randomstring_raises(self):
         with self.assertRaises(ValueError):
             self.calc.add("ran,do/mstring")
+
+    def test_negatives_not_allowed_raises(self):
+        with self.assertRaises(ValueError):
+            self.calc.add("1,-2,-5,10,-101,-52")
+
 
 if __name__ == '__main__':
     unittest.main()

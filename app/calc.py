@@ -1,11 +1,16 @@
 import re
-regex_one_number = re.compile("^(-?[0-9]+)$")                           # simplify this
-regex_n_numbers = re.compile("^(-?([0-9])+[\W])+-?[0-9]+$")             #
+regex_numbers = re.compile("^(-?([0-9])+[\W]?)+$")             #
+regex_negative_numbers = re.compile("-[0-9]+")
 regex_with_custom = re.compile("^\[\W\]\n(-?([0-9])+[\W])+(-?[0-9]+)$") #
 regex_delimiter_brackets = re.compile("^\[\W+\]\n")
 default_delimiter = '\n|,'
 
 class Calc(object):
+
+    def _check_limits(self, number):
+        negatives = re.findall(regex_negative_numbers, number)
+        if negatives:
+            raise ValueError('Negatives not allowed {}'.format(negatives))
 
     def _preprocess(self, input):
         if regex_with_custom.match(input):
@@ -18,11 +23,10 @@ class Calc(object):
 
     def add(self, input):
         regex_delimiter, number = self._preprocess(input)
+        self._check_limits(number)
         if number == "":
             return 0
-        elif regex_one_number.match(number):
-            return int(number)
-        elif regex_n_numbers.match(number):
+        elif regex_numbers.match(number):
             numlist = re.split(regex_delimiter, number)
             numlist = map(int, numlist)
             return sum(numlist)
