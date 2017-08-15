@@ -1,8 +1,8 @@
 import re
 regex_numbers = re.compile("^((-?[0-9])+[\W+]*)+$")
 regex_negative_numbers = re.compile("-[0-9]+")
-regex_with_custom = re.compile("^\[\W+\]\n((-?[0-9])+[\W+]*)+$")
-regex_delimiter_brackets = re.compile("^\[\W+\]\n")
+regex_with_custom = re.compile("^\[\W+\]+\n((-?[0-9])+[\W+]*)+$")
+regex_delimiter_brackets = re.compile("^\[\W+\]+\n")
 default_delimiter = '\n'
 
 class Calc(object):

@@ -93,5 +93,14 @@ class TestAssignmentSix(unittest.TestCase):
         res = self.calc.add("[;;;]\n1;;;2;;;3")
         self.assertEqual(res, 6)
 
+class TestAssignmentSeven(unittest.TestCase):
+
+    def setUp(self):
+        self.calc = Calc()
+
+    def test_larger_than_thousand_ignored(self):
+        res = self.calc.add("[;;;][,,,]\n1;;;2,,,3")
+        self.assertEqual(res, 6)
+
 if __name__ == '__main__':
     unittest.main()
