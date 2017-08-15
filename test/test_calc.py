@@ -21,14 +21,13 @@ class TestAssignmentOne(unittest.TestCase):
         res = self.calc.add("1\n2")
         self.assertEqual(res, 3)
 
-    def test_two_separators_correct(self):
-        res = self.calc.add("1\n2\n3")
-        self.assertEqual(res, 6)
+    def test_randomstring_raises(self):
+        with self.assertRaises(ValueError):
+            self.calc.add("ran,do/mstring")
 
-    # def test_randomstring_raises(self):
-    #     with self.assertRaises(ValueError):
-    #         self.calc.add("ran,do/mstring")
-    #     print("dummy")
+    def test_two_strings_raises(self):
+        with self.assertRaises(ValueError):
+            self.calc.add("ran\ndomstring")
 
 class TestAssignmentTwo(unittest.TestCase):
 
@@ -39,10 +38,23 @@ class TestAssignmentTwo(unittest.TestCase):
         res = self.calc.add("1\n2\n5\n9\n500\n800")
         self.assertEqual(res, 1317)
 
+    def test_two_separators_correct(self):
+        res = self.calc.add("1\n2\n3")
+        self.assertEqual(res, 6)
+
+
 class TestAssignmentThree(unittest.TestCase):
 
     def setUp(self):
         self.calc = Calc()
+
+    def test_input_string_ends_with_newline_raises(self):
+        with self.assertRaises(ValueError):
+            self.calc.add("1,\n")
+
+    def test_two_separators_correct(self):
+        res = self.calc.add("1\n2,3")
+        self.assertEqual(res, 6)
 
     def test_custom_separator_correct(self):
         res = self.calc.add("[:]\n1:2:3")
@@ -56,23 +68,15 @@ class TestAssignmentThree(unittest.TestCase):
         res = self.calc.add("[*]\n1*2*3")
         self.assertEqual(res, 6)
 
-    # def test_three_numbers_two_separators_incorrect(self):
-    #     with self.assertRaises(Exception):
-    #         self.calc.add("1,2\n3")
-
-    # def test_one_number_two_separators_incorrect(self):
-    #     with self.assertRaises(Exception):
-    #         self.calc.add("1,\n")
-
 class TestAssignmentFour(unittest.TestCase):
 
     def setUp(self):
         self.calc = Calc()
 
-    # def test_negatives_not_allowed_raises(self):
-    #     with self.assertRaises(ValueError) as context:
-    #         self.calc.add("1\n-2\n3\n-5")
-    #     self.assertTrue("Negatives not allowed ['-2', '-5']" in context.exception.args[0])
+    def test_negatives_not_allowed_raises(self):
+        with self.assertRaises(ValueError) as context:
+            self.calc.add("1\n-2\n3\n-5")
+        self.assertTrue("Negatives not allowed ['-2', '-5']" in context.exception.args[0])
 
 
 class TestAssignmentFive(unittest.TestCase):

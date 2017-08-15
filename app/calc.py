@@ -4,7 +4,7 @@ regex_negative_numbers = re.compile("-[0-9]+")
 regex_with_custom_delim = re.compile("^\[\W+\]+\n((-?[0-9])+[\W+]*)+$")
 regex_custom_delimiters = re.compile("^\[\W+\]+\n")
 regex_one_delimmiter = re.compile("\[(.*?)\]")
-default_delimiter = '\n'
+default_delimiter = '\n|,'
 
 class Calc(object):
 
@@ -30,18 +30,18 @@ class Calc(object):
             return default_delimiter, input
 
     def add(self, input):
-        try:
-            regex_delimiter, number = self._split_delimiters_and_numbers(input)
-            self._check_negatives(number)
-            if number == "":
-                return 0
-            elif regex_numbers.match(number):
-                numlist = re.split(regex_delimiter, number)
-                numlist = self._str_to_int(numlist)
-                numlist = self._smaller_than(numlist)
-                return sum(numlist)
-            else:
-                raise ValueError('''Input string has to be in a format  "" or "1" or "1,2" or 1,2,5,10,20... ""''')
-        except Exception as e:
-            print(e)
+        # try:
+        regex_delimiter, number = self._split_delimiters_and_numbers(input)
+        self._check_negatives(number)
+        if number == "":
+            return 0
+        elif regex_numbers.match(number):
+            numlist = re.split(regex_delimiter, number)
+            numlist = self._str_to_int(numlist)
+            numlist = self._smaller_than(numlist)
+            return sum(numlist)
+        else:
+            raise ValueError('''Input string has to be in a format  "" or "1" or "1,2" or 1,2,5,10,20... ""''')
+        # except Exception as e:
+        #     print(e)
 

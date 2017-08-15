@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3dd79525-7b2e-4e0d-8697-5d0903ba8a89" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/calc.iml" afterPath="$PROJECT_DIR$/.idea/calc.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/calc.py" afterPath="$PROJECT_DIR$/app/calc.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_calc.py" afterPath="$PROJECT_DIR$/test/test_calc.py" />
     </list>
@@ -21,9 +18,11 @@
       <file leaf-file-name="test_calc.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/test_calc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-317">
-              <caret line="2" column="14" lean-forward="false" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-              <folding />
+            <state relative-caret-position="397">
+              <caret line="114" column="0" lean-forward="true" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -31,8 +30,8 @@
       <file leaf-file-name="calc.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/calc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="737">
-              <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+            <state relative-caret-position="102">
+              <caret line="6" column="25" lean-forward="false" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -66,8 +65,8 @@
         <option value="$PROJECT_DIR$/tests/test_calc.py" />
         <option value="$PROJECT_DIR$/tests/test_class.py" />
         <option value="$PROJECT_DIR$/test/test_class.py" />
-        <option value="$PROJECT_DIR$/test/test_calc.py" />
         <option value="$PROJECT_DIR$/app/calc.py" />
+        <option value="$PROJECT_DIR$/test/test_calc.py" />
       </list>
     </option>
   </component>
@@ -152,21 +151,6 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittests for test.test_calc.TestAssignmentThree.test_custom_separator_correct" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="calc" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test.test_calc.TestAssignmentThree.test_custom_separator_correct&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method />
-    </configuration>
     <configuration default="false" name="Unittests for test.test_calc.TestAssignmentFour.setUp" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -209,6 +193,21 @@
       <module name="calc" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test.test_calc.TestAssignmentSeven.test_multiple_delim_types_correct&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests for test.test_calc.TestAssignmentOne" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="calc" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test.test_calc.TestAssignmentOne&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method />
     </configuration>
@@ -281,18 +280,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in test_calc.py" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for test.test_calc.TestAssignmentThree.test_custom_separator_correct" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for test.test_calc.TestAssignmentFour.setUp" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for test.test_calc.TestAssignmentThree" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for test.test_calc.TestAssignmentSeven.test_multiple_delim_types_correct" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for test.test_calc.TestAssignmentFour.setUp" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for test.test_calc.TestAssignmentThree" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for test.test_calc.TestAssignmentSeven.test_multiple_delim_types_correct" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for test.test_calc.TestAssignmentOne" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in test_calc.py" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for test.test_calc.TestAssignmentSeven.test_multiple_delim_types_correct" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for test.test_calc.TestAssignmentThree" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for test.test_calc.TestAssignmentFour.setUp" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for test.test_calc.TestAssignmentThree.test_custom_separator_correct" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for test.test_calc.TestAssignmentOne" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for test.test_calc.TestAssignmentSeven.test_multiple_delim_types_correct" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for test.test_calc.TestAssignmentThree" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for test.test_calc.TestAssignmentFour.setUp" />
       </list>
     </recent_temporary>
   </component>
@@ -310,26 +309,8 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_test_calc_py - 2017.08.15 at 21h 15m 51s.xml">
-      <configuration name="Unittests in test_calc.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_calc_py - 2017.08.15 at 21h 16m 28s.xml">
-      <configuration name="Unittests in test_calc.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_calc_py - 2017.08.15 at 21h 17m 40s.xml">
-      <configuration name="Unittests in test_calc.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_calc_py - 2017.08.15 at 21h 18m 32s.xml">
-      <configuration name="Unittests in test_calc.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_calc_py - 2017.08.15 at 21h 18m 36s.xml">
-      <configuration name="Unittests in test_calc.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_calc_py - 2017.08.15 at 21h 18m 42s.xml">
-      <configuration name="Unittests in test_calc.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_calc_py - 2017.08.15 at 21h 28m 47s.xml">
-      <configuration name="Unittests in test_calc.py" configurationId="tests" />
+    <history-entry file="Unittests_for_test_test_calc_TestAssignmentOne - 2017.08.15 at 21h 40m 08s.xml">
+      <configuration name="Unittests for test.test_calc.TestAssignmentOne" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittests_in_test_calc_py - 2017.08.15 at 21h 29m 26s.xml">
       <configuration name="Unittests in test_calc.py" configurationId="tests" />
@@ -340,15 +321,34 @@
     <history-entry file="Unittests_in_test_calc_py - 2017.08.15 at 21h 32m 18s.xml">
       <configuration name="Unittests in test_calc.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_test_calc_py - 2017.08.15 at 21h 38m 53s.xml">
+      <configuration name="Unittests in test_calc.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_calc_py - 2017.08.15 at 21h 40m 12s.xml">
+      <configuration name="Unittests in test_calc.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_calc_py - 2017.08.15 at 21h 42m 30s.xml">
+      <configuration name="Unittests in test_calc.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_calc_py - 2017.08.15 at 21h 45m 41s.xml">
+      <configuration name="Unittests in test_calc.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_calc_py - 2017.08.15 at 21h 46m 56s.xml">
+      <configuration name="Unittests in test_calc.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_calc_py - 2017.08.15 at 21h 47m 35s.xml">
+      <configuration name="Unittests in test_calc.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4154334" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4154334" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -369,22 +369,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test/test_calc.py</url>
-          <line>55</line>
-          <option name="timeStamp" value="53" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test/test_calc.py</url>
-          <line>105</line>
-          <option name="timeStamp" value="54" />
-        </line-breakpoint>
-      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="55" />
+      <option name="time" value="56" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -393,7 +381,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="986">
           <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -409,7 +399,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-          <folding />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -430,17 +422,19 @@
     <entry file="file://C:/Python35/Lib/re.py" />
     <entry file="file://$PROJECT_DIR$/app/calc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="737">
-          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        <state relative-caret-position="102">
+          <caret line="6" column="25" lean-forward="false" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test_calc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-317">
-          <caret line="2" column="14" lean-forward="false" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-          <folding />
+        <state relative-caret-position="397">
+          <caret line="114" column="0" lean-forward="true" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
