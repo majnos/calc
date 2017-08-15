@@ -4,7 +4,7 @@ from app.calc import Calc
 
 ## https://code.tutsplus.com/tutorials/beginning-test-driven-development-in-python--net-30137
 
-class TestAssignment(unittest.TestCase):
+class TestAssignmentOne(unittest.TestCase):
 
     def setUp(self):
         self.calc = Calc()
@@ -21,13 +21,27 @@ class TestAssignment(unittest.TestCase):
         res = self.calc.add("1,2")
         self.assertEqual(res, 3)
 
-    def test_n_numbers_correct(self):
-        res = self.calc.add("1,2,5,9,1000,10000")
-        self.assertEqual(res, 11017)
-
     def test_two_separators_correct(self):
         res = self.calc.add("1,2\n3")
         self.assertEqual(res, 6)
+
+    def test_randomstring_raises(self):
+        with self.assertRaises(ValueError):
+            self.calc.add("ran,do/mstring")
+
+class TestAssignmentTwo(unittest.TestCase):
+
+    def setUp(self):
+        self.calc = Calc()
+
+    def test_n_numbers_correct(self):
+        res = self.calc.add("1,2,5,9,500,800")
+        self.assertEqual(res, 1317)
+
+class TestAssignmentThree(unittest.TestCase):
+
+    def setUp(self):
+        self.calc = Calc()
 
     def test_custom_separator_correct(self):
         res = self.calc.add("[:]\n1:2:3")
@@ -45,13 +59,29 @@ class TestAssignment(unittest.TestCase):
         with self.assertRaises(ValueError):
             self.calc.add("1,\n")
 
-    def test_randomstring_raises(self):
-        with self.assertRaises(ValueError):
-            self.calc.add("ran,do/mstring")
+class TestAssignmentFour(unittest.TestCase):
+
+    def setUp(self):
+        self.calc = Calc()
 
     def test_negatives_not_allowed_raises(self):
-        with self.assertRaises(ValueError):
-            self.calc.add("1,-2,-5,10,-101,-52")
+        with self.assertRaises(ValueError) as context:
+            self.calc.add("1,-2,3,-5")
+        self.assertTrue("Negatives not allowed ['-2', '-5']" in context.exception.args[0])
+
+
+class TestAssignmentFive(unittest.TestCase):
+
+    def setUp(self):
+        self.calc = Calc()
+
+    def test_larger_than_thousand_ignored(self):
+        res = self.calc.add("2,1000")
+        self.assertEqual(res, 2)
+
+    def test_larger_than_thousand_ignored(self):
+        res = self.calc.add("2,1000,10")
+        self.assertEqual(res, 12)
 
 
 if __name__ == '__main__':
