@@ -52,6 +52,10 @@ class TestAssignmentThree(unittest.TestCase):
         res = self.calc.add("[;]\n1;2;3")
         self.assertEqual(res, 6)
 
+    def test_custom_separator_star_correct(self):
+        res = self.calc.add("[*]\n1*2*3")
+        self.assertEqual(res, 6)
+
     # def test_three_numbers_two_separators_incorrect(self):
     #     with self.assertRaises(Exception):
     #         self.calc.add("1,2\n3")
@@ -89,8 +93,8 @@ class TestAssignmentSix(unittest.TestCase):
     def setUp(self):
         self.calc = Calc()
 
-    def test_larger_than_thousand_ignored(self):
-        res = self.calc.add("[;;;]\n1;;;2;;;3")
+    def test_multiple_star_delimiter_correct(self):
+        res = self.calc.add("[***]\n1***2***3")
         self.assertEqual(res, 6)
 
 class TestAssignmentSeven(unittest.TestCase):
@@ -98,7 +102,7 @@ class TestAssignmentSeven(unittest.TestCase):
     def setUp(self):
         self.calc = Calc()
 
-    def test_larger_than_thousand_ignored(self):
+    def test_multiple_delim_types_correct(self):
         res = self.calc.add("[;;;][,,,]\n1;;;2,,,3")
         self.assertEqual(res, 6)
 

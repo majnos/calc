@@ -1,8 +1,9 @@
 import re
 regex_numbers = re.compile("^((-?[0-9])+[\W+]*)+$")
 regex_negative_numbers = re.compile("-[0-9]+")
-regex_with_custom = re.compile("^\[\W+\]+\n((-?[0-9])+[\W+]*)+$")
-regex_delimiter_brackets = re.compile("^\[\W+\]+\n")
+regex_with_custom_delim = re.compile("^\[\W+\]+\n((-?[0-9])+[\W+]*)+$")
+regex_custom_delimiters = re.compile("^\[\W+\]+\n")
+regex_one_delimmiter = re.compile("\[(.*?)\]")
 default_delimiter = '\n'
 
 class Calc(object):
@@ -18,18 +19,19 @@ class Calc(object):
         if negatives:
             raise ValueError('Negatives not allowed {}'.format(negatives))
 
-    def _preprocess(self, input):
-        if regex_with_custom.match(input):
-            m = re.search(regex_delimiter_brackets, input)
-            delimiter = "\\"+m.group(0)[1:-2]                     # do this better
-            numbers = re.sub(regex_delimiter_brackets, '', input)
+    def _split_delimiters_and_numbers(self, input):
+        if regex_with_custom_delim.match(input):
+            delim_raw = re.search(regex_custom_delimiters, input).group()
+            delim_list = re.findall(regex_one_delimmiter, delim_raw)
+            delimiter = "|".join([re.escape(item) for item in delim_list])
+            numbers = re.sub(regex_custom_delimiters, '', input)
             return delimiter, numbers
         else:
             return default_delimiter, input
 
     def add(self, input):
         try:
-            regex_delimiter, number = self._preprocess(input)
+            regex_delimiter, number = self._split_delimiters_and_numbers(input)
             self._check_negatives(number)
             if number == "":
                 return 0
